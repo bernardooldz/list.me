@@ -4,8 +4,6 @@ import Title from "../components/Title";
 import AddTaskToList from "../components/TaksComponents/AddTaskToList";
 import TaskList from "../components/TaksComponents/TaskList/TaksList";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-
 
 function ListPage() {
   const { id } = useParams();
@@ -42,7 +40,6 @@ function ListPage() {
         </div>
       </div>
     </div>
-    <Footer />
     </div>
     
   );

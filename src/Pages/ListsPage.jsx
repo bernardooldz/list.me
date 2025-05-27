@@ -3,7 +3,6 @@ import ListContainer from "../components/ListComponents/List/List";
 import Title from "../components/Title";
 import AddList from "../components/ListComponents/AddList";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
 
 function Lists() {
   const [listas, setListas] = useState(() => {
@@ -28,7 +27,6 @@ function Lists() {
           <ListContainer listas={listas} setListas={setListas} />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
