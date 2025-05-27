@@ -1,5 +1,5 @@
 footer {
-  background-color: rgba(94, 95, 94, 0.479);
+  background-color: rgba(119, 153, 119, 0.479);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -9,18 +9,19 @@ footer {
   width: 100%;
   height: 10vh;
   margin-top: 50px;
+  position: absolute;
+  top: 100;
 }
 
 footer p {
-    color: var(--text-white);
+    color: var(--text-gray);
 }
 
 footer p a {
     text-decoration: none;
-    background: linear-gradient(var(--green-medium), var(--green-light));
+    background: linear-gradient(var(--green-dark), var(--accent-green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
 }
 
 span {

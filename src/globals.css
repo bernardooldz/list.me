@@ -13,7 +13,7 @@
 
     --accent-green: #495927;
     --muted-green: #97A677;
-    --background-gray: #f3f4f6;
+    --background-gray: #ebecec;
     --background-green: #b0b6ae;
     --text-gray: #5f6264;
 
@@ -33,7 +33,7 @@ li {
 }
 
 body {
-    background: var(--background-green);
+    background: var(--background-gray);
 }
 
 html {
@@ -161,8 +161,11 @@ html ::-webkit-scrollbar-track {
     gap: 15px;
     padding: 24px;
     border-radius: 10px;
-    border: var(--gray-medium) 1px solid;
-    background-color: var(--gray-light);
+    border: var(--gray-medium) 2px solid;
+    background-color: rgba(200, 202, 200, 0.479);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
     & input:focus {
         outline: 1px solid var(--green-dark);
