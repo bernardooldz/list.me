@@ -1,0 +1,103 @@
+@import "@radix-ui/colors/black-alpha.css";
+@import "@radix-ui/colors/violet.css";
+@import "@radix-ui/colors/mauve.css";
+
+input,
+textarea,
+button {
+	all: unset;
+	box-sizing: border-box;
+}
+
+.FormRoot {
+	width: 100%;
+}
+
+.FormField {
+	display: grid;
+	margin-bottom: 10px;
+}
+
+.FormLabel {
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 35px;
+	color: var(--green-dark);
+}
+
+.FormMessage {
+	font-size: 13px;
+	color: #cc6868;
+	opacity: 0.8;
+}
+
+.Input,
+.Textarea {
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	font-size: 15px;
+	color: var(--text-gray);
+	background-color: var(--black-a2);
+	box-shadow: 0 0 0 1px var(--black-a6);
+}
+
+.Input:hover,
+.Textarea:hover {
+	box-shadow: 0 0 0 1px var(--green-dark);
+}
+
+.Input:focus,
+.Textarea:focus {
+	box-shadow: 0 0 0 2px var(--green-dark);
+}
+
+.Input::selection,
+.Textarea::selection {
+	background-color: var(--black-a6);
+	color: white;
+}
+
+.Input {
+	padding: 0 10px;
+	height: 45px;
+	line-height: 1;
+}
+
+.Textarea {
+	resize: none;
+	padding: 10px;
+}
+
+.ButtonCreateList {
+	text-align: center;
+	border-radius: 8px;
+	padding: 0 25px;
+	font-size: 1.15rem;
+	line-height: 1;
+	font-weight: 600;
+	height: 3rem;
+	width: 70%;
+	margin-inline: 15%;
+	background-color: var(--green-dark);
+	color: var(--text-white);
+	box-shadow: 0 2px 10px var(--black-a4);
+    cursor: pointer;
+	transition: all 0.2s;
+}
+
+.ButtonCreateList:hover {
+    color: var(--green-dark);
+	background-color: var(--text-white);
+	border: 1px solid var(--green-dark);
+}
+
+.Button:focus {
+	box-shadow: 0 0 0 2px var(--green-dark);
+}
+
+.FormLabel[data-invalid] {
+	color: #cc6868;
+}

@@ -1,0 +1,7 @@
+.listaCard.done {
+  opacity: 0.4;
+}
+
+.listaCard.done h3 {
+  text-decoration: line-through;
+}

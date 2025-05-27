@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --text-white: #fff;
+
+    --green-light: #c8dd9f;
+    --green-medium: #aabe80;
+    --green-dark: #50593E;
+
+    --gray-light: #d9d9d9;
+    --gray-medium: #b0b0b0;
+    --gray-dark: #7f7f7f;
+
+    --accent-green: #495927;
+    --muted-green: #97A677;
+    --background-gray: #f3f4f6;
+    --background-green: #b0b6ae;
+    --text-gray: #5f6264;
+
+    --red-error: #ca8282;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    background: var(--background-green);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+html ::-webkit-scrollbar {
+    width: 3px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: var(--accent-green);
+}
+
+html ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.divPrincipal {
+    width: max-content;
+    justify-content: center;
+    margin-inline: auto;
+    padding: 20px;
+    padding-block: 40px;
+    gap: 5rem;
+}
+
+.container {
+    width: 500px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 5rem;
+}
+
+.container:last-child {
+    margin-bottom: 20rem;
+}
+
+.titleGeral {
+    & h1 {
+        font-size: 2.25rem;
+        color: var(--text-white);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    & hr {
+        display: none;
+    }
+}
+
+.subTitles {
+    & h1 {
+        font-size: 1.75rem;
+        color: var(--green-dark);
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--accent-green);
+    }
+
+    & hr {
+        background-color: var(--muted-green);
+        height: 4px;
+        width: 360px;
+        margin-block: 5px 10px;
+        margin-inline: auto;
+    }
+}
+
+.task {
+    background-color: var(--green-medium);
+    color: var(--text-white);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    gap: 5px;
+}
+
+.task:hover {
+    transform: scale(102%);
+}
+
+.taskComplete {
+    text-decoration: line-through;
+}
+
+.buttonTask {
+    background-color: var(--green-medium);
+    color: var(--text-white);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonTask:hover {
+    transform: scale(105%);
+}
+
+.containerTasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    border-radius: 10px;
+    border: var(--gray-medium) 1px solid;
+    background-color: var(--gray-light);
+    margin-bottom: 40px;
+}
+
+.containerAddTasks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 24px;
+    border-radius: 10px;
+    border: var(--gray-medium) 1px solid;
+    background-color: var(--gray-light);
+
+    & input:focus {
+        outline: 1px solid var(--green-dark);
+    }
+}
+
+.containerDatailsTask {
+    background-color: var(--gray-light);
+    color: var(--text-gray);
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+
+    & h2 {
+        font-size: 23px;
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+
+    & button {
+        background-color: var(--green-medium);
+        color: var(--text-white);
+        padding: 10px;
+        padding-right: 15px;
+        border-radius: 10px;
+        font-size: 17px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .divPrincipal {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
